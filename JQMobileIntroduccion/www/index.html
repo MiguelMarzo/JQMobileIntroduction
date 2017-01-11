@@ -1,29 +1,33 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html>
     <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
     <!--
         Personalice la directiva de seguridad de contenido en la etiqueta meta como sea necesario. Agregue "unsafe-inline" a default-src para permitir JavaScript insertado.
-        Para obtener más detalles, consulte http://go.microsoft.com/fwlink/?LinkID=617521
+        Para obtener mÃ¡s detalles, consulte http://go.microsoft.com/fwlink/?LinkID=617521
     -->
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
         
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
         <title>JQMobileIntroduccion</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Conectando con el dispositivo</p>
-                <p class="event received">El dispositivo está preparado</p>
+        <div id="page1" data-role="page">
+            <div data-role="header">
+                <h1>Cabecera</h1>
+            </div>
+            <div data-role="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor magna commodo consequat viverra. Praesent velit mauris, gravida vel nisi ac, congue vestibulum metus. Donec malesuada ex id volutpat venenatis. Fusce et gravida odio. Sed ultrices hendrerit massa quis dignissim. Integer vel blandit nisi. Vestibulum lobortis ante at tempus ultrices. Maecenas porttitor cursus tellus, nec commodo tellus hendrerit et. Fusce quis faucibus metus. Mauris in eros rhoncus, posuere augue vestibulum, ultricies sem. Duis sit amet luctus arcu. Vivamus lobortis ultrices lorem, eget consectetur quam auctor eu. Vivamus ac ante ut erat consequat bibendum ut eget risus.</p>              
+            </div>
+            <div data-role="footer">
+                <h1>Footer</h1>
             </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
-        <script type="text/javascript" src="scripts/index.js"></script>
+        
+        <script type="text/javascript" src="scripts/jquery-1.8.0.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery.mobile-1.4.5.min.js"></script>
     </body>
 </html>
