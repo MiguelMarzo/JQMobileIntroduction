@@ -15,6 +15,7 @@
         <title>JQMobileIntroduccion</title>
     </head>
     <body>
+        <!--Página 1-->
         <div id="page1" data-role="page">
             <div data-role="header" data-theme="b">
                 <h1>Cabecera</h1>
@@ -28,20 +29,50 @@
             </div>
         </div>
 
+        <!--Página 2-->
         <div id="page2" data-role="page">
             <div data-role="header">
                 <h1>Cabecera 2</h1>
             </div>
             <div data-role="content">
                 <a data-role="button" data-transition="slideup" href="www.google.com">Ir a Google</a>
-                <a data-role="button" href="#page1">Ir a página 1</a>
-                <a data-role="button" href="#page3">Ir a página 3</a>                
+                <a data-role="button" href="#page1" data-inline="true">Ir a página 1</a>
+                <a data-role="button" href="#page3" data-inline="true">Ir a página 3</a>        
+                <input data-role="button" type="submit" value="boton submit" />
+                <input data-role="button" type="submit" value="boton submit" />
+                <button data-role="button" value="boton">Boton</button>
+                        
             </div>
             <div data-role="footer">
 
             </div>
         </div>
+
+        <!--Página 3-->
+        <div id="page3" data-role="page">
+            <div data-role="header"></div>
+            <div data-role="content">
+                <!--Volver atrás-->
+                <a data-role="button" data-rel="back">Volver</a>
+                <!--Tipos de transiciones-->
+                <a href="#page4" data-role="button" data-transition="fade">Fade</a>
+                <a href="#page4" data-role="button" data-transition="flip">Flip</a>
+                <a href="#page4" data-role="button" data-transition="pop">Pop</a>
+                <a href="#page4" data-role="button" data-transition="slide">Slide</a>
+                <a href="#page4" data-role="button" data-transition="slidedown">Slidedown</a>
+                <a href="#page4" data-role="button" data-transition="slideup">Slideup</a>
+            </div>
+        </div>
         
+        <!--Página 4-->
+        <div id="page4" data-role="page">
+            <div data-role="header"></div>
+            <div data-role="content">
+                <!--Volver atrás-->
+                <a data-role="button" data-rel="back">Volver</a>               
+            </div>
+        </div>
+
         <script type="text/javascript" src="scripts/jquery-1.8.0.min.js"></script>
         <script type="text/javascript" src="scripts/jquery.mobile-1.4.5.min.js"></script>
     </body>
